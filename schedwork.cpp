@@ -22,21 +22,6 @@ static const Worker_T INVALID_ID = (unsigned int)-1;
 
 // Add prototypes for any helper functions here
 
-void testPrintSchedule(const DailySchedule& sched)
-{
-    int day = 0;
-    for(auto s : sched)
-    {
-        cout << "Day " << day << ": ";
-        for(auto nurse : s)
-        {
-            cout << nurse << " ";
-        }
-        cout << endl;
-        day++;
-    }
-}
-
 bool isValid(
     const AvailabilityMatrix& avail,
     const vector<unsigned int>& shifts,
